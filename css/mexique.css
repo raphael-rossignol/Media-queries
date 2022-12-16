@@ -1,0 +1,488 @@
+/*---mexique.css---*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*---header.css---*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header img{
+    width: 7%;
+}
+
+a:visited {
+    color: black;
+  }
+  a:active {
+    color: rgb(0, 255, 242);
+  }
+  a:hover {
+   color: rgb(0, 255, 242);
+  }
+a:visited {
+        color: black;
+      }
+a:active {
+        color: rgb(0, 255, 242);
+      }
+a:hover {
+       color: rgb(0, 255, 242);
+      }
+a{
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+/*----Sous-menu----*/
+
+#primary_nav_wrap{
+    margin-top:30px;
+    margin-right: 200px;
+}
+
+#primary_nav_wrap ul
+{
+    list-style:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+}
+
+#primary_nav_wrap ul a
+{
+    display:block;
+    color:black;
+    text-decoration:none;
+    padding:0 2px;
+    margin-right: 150px;
+}
+
+#primary_nav_wrap ul li
+{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+    background:white
+}
+
+#primary_nav_wrap ul li a:hover
+{
+    color: #4891a3;
+}
+
+#primary_nav_wrap ul ul
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:white;
+    padding:0;
+}
+
+#primary_nav_wrap ul ul li
+{
+    float:none;
+    width:200px;
+}
+
+#primary_nav_wrap ul ul a
+{
+    line-height:120%;
+    padding:10px 15px;
+}
+
+#primary_nav_wrap ul ul ul
+{
+    top:0;
+    left:100%;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+    display:block;
+}
+
+/*---img background---*/
+
+.pays__section--background > img{
+    width: 100vw;
+}
+
+/*---section title---*/
+
+section .pays__section--title{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+
+/*---articles---*/
+
+article{
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+}
+
+a img{
+    margin-bottom:20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 250px;
+    height: 84%;
+ 
+}
+a img:hover{
+    transform: scale(1);
+}
+
+#img1{
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+    
+}
+#img2{
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+}
+#img3{
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+}
+#img4{
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+}
+#img5{
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+}
+#img6{
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+}
+
+article .pays__article--text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: rgb(130, 93, 125) 10px 10px 15px 2px;
+    width: 50%;
+} 
+h2{
+    background-color: pink;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+/*---Footer---*/
+
+footer{
+    background-color: #4891a3;
+    padding: 2% 2% 1% 2%;
+}
+.index__footer{
+    display: flex;
+    justify-content: space-around;
+    border: pink 2px solid;
+    
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+footer nav a{
+    text-decoration: none;
+    font-size: 140%;
+}
+.index__footer ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.index__footer ul a{
+    margin-left: 20%;
+}
+.index__footer img{
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.index__footer > ul a:hover{
+    transform: scale(2);
+}
+
+
+/*---Media Queries---*/
+
+
+@media all and (max-width: 480px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: static;
+        top: 0;
+        background-color: white;
+        width: 100vw;
+    }
+    header img{
+        width: 50vw;
+        position: static;
+        left: 50vw;
+    }
+    #primary_nav_wrap{
+        margin-top:0px;
+        margin-right: 0px;
+    }
+    #primary_nav_wrap ul a{
+    padding:5px;
+    margin-right: 0px;
+    }
+    #primary_nav_wrap{
+        margin-top:30px;
+        margin: 2%;
+    }
+    #primary_nav_wrap ul li:hover > ul
+    {
+        display:none ;
+    }
+    #primary_nav_wrap ul li:active > ul{
+        display:block;
+    }
+    #primary_nav_wrap ul ul ul
+    {
+    top:0;
+    left:50%;
+    }
+    main{
+        font-size: 22px;
+    }
+    main .pays__article--nourriture{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .pays__article--lieux{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .pays__article--activités{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .pays__article--text{
+        width: 80vw;
+        padding: 5%;
+        margin: 5%;      
+    }
+    a img{
+        margin-bottom:0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        max-width: 320px;
+        width: 100vw;
+    }
+    footer nav a{
+        text-decoration: none;
+        font-size: 16px;
+        margin: 2%;
+    }
+    .index__footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .index__footer img{
+        width: 32px;
+        height: 32px;
+        margin: 7vw;
+    }
+    .index__footer > ul a:hover{
+        transform: none;
+    }
+    .index__footer ul{
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+    .index__footer ul a{
+        margin-left: 0%;
+    }
+    
+    
+    /*---Menu Burger---*/
+    
+    
+    * {
+  box-sizing: border-box;
+}
+
+:root {
+  --hlogo: 3rem;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  height: 10rem;
+}
+
+.trigger {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  z-index: 3;
+  opacity: 1;
+}
+.trigger:before {
+  font-size: 3rem;
+  text-align: center;
+  content: "=";
+  color: black;
+  transition: all 0.3s;
+  line-height: 1.8rem;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  opacity: 1;
+  position: absolute;
+}
+.trigger:checked:before {
+  border-color: #fff;
+  content: "+";
+  transform: rotate(-45deg);
+  color: black;
+  position: fixed;
+}
+
+@keyframes anilogo {
+  from {
+    transform: translateY(0);
+  }
+  16% {
+    transform: translateY(0);
+  }
+  19% {
+    transform: translateY(-1rem);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  23% {
+    transform: translateY(-1rem);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.logo {
+  align-self: start;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  display: grid;
+  align-content: center;
+  height: var(--hlogo);
+  width: 6rem;
+  padding: 1rem;
+}
+.logo .c1 {
+  animation: anilogo 4s infinite ease-in-out;
+  transform-origin: 12px 40px;
+}
+.logo__svg {
+  fill: pink;
+  width: 100%;
+  height: 2rem;
+}
+
+.menu {
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0vw;
+  right: -100vw;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background: transparent;
+  z-index: 1;
+}
+.menu a {
+  color: #fff3;
+  transition: all 0.5s;
+  margin: 1rem;
+  text-decoration: none;
+   left: 0vw;
+  right: -100vw;
+  font-size: 2em;
+}
+.menu a:first-child {
+  margin-top: 5rem;
+}
+
+.trigger:checked ~ .menu {
+  left: 0;
+  right: 0;
+  background-color: #4891a3;
+  transition: right 1.2s ease-in-out, background 1s ease-in-out, left 1s ease-in-out;
+}
+
+.trigger:not(:checked) ~ .menu {
+  left: 100vw;
+  right: 0;
+  background-color: #1a1a33;
+  visibility: hidden;
+}
+
+.trigger:checked ~ .menu a {
+  transition: color 0.5s 1s;
+  color: black;
+  font-variation-settings: "wght" 300;
+}
+
+}
